@@ -1,0 +1,12 @@
+name: Hit Endpoint Every 10 Seconds
+
+on:
+  schedule:
+    - cron: '*/10 * * * * *'  # Runs every 10 seconds
+
+jobs:
+  hit_endpoint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hit Endpoint
+        run: curl -X GET https://kod73.vercel.app/
