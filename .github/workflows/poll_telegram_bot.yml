@@ -2,7 +2,7 @@ name: Hit Endpoint Every 10 Seconds
 
 on:
   schedule:
-    - cron: '0/1 * * * *'
+    - cron: '0/5 * * * *'
 
 jobs:
   hit_endpoint:
